@@ -2,11 +2,11 @@ pipeline {
     agent any
 
     environment {
-        GIT_REPO   = 'git@github.com:bharathsavadatti447/ecr-push.git'
+        GIT_REPO   = 'https://github.com/bharathsavadatti447/ecr-push.git'
         BRANCH     = 'main'
         AWS_REGION = 'us-east-1'
-        ECR_REPO_NODE = 'public.ecr.aws/o9v8l7j1/dockerrepo-node'
-        ECR_REPO_JAVA = 'public.ecr.aws/o9v8l7j1/dockerrepo-java'
+        ECR_REPO_NODE = 'public.ecr.aws/o9v8l7j1/dockerrepo'
+        ECR_REPO_JAVA = 'public.ecr.aws/o9v8l7j1/dockerrepo'
         IMAGE_NAME_1 = 'node-app'
         IMAGE_TAG_1  = 'v1.0.0'
         IMAGE_NAME_2 = 'java-app'
